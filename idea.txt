@@ -1,0 +1,26 @@
+-------------------------------------------------Encoder and Decoder--------------------------------------------------
+
+Types of Encoders:
+
+*	Binary Encoder- Simple converter from text to binary it will take a character from the input string and convert 
+ 	it to its binary equivalent using its ASCII value. The function Binary Encoder will return a pointer to the array 
+ 	which will store this data in a text file.
+
+*	Morse Code Encoder- Simple converter which finds the equivalent of each alphabet in the morse code and passes the
+	pointer to the array which will store this data in a text file. 
+
+*	Base64 Encoder- Base64 Encoder basically takes in data of 3 bytes and then groups the 8 bits of data into 6 bits
+	and finds its equivalent from the Base64 table. Incase the data is short of its 6 bits then padding is added ie, 
+	000 depending on how many are required to make 6 bits and assign its equivalent from the Base64 table. The String 
+	ends with an '=' sign. If padding is added then the string will end with 2 '=' signs. 
+
+*	Ascii85 Encoder- Ascii85 Encoder takes the input data four bytes at a time. Each block of four input bytes is 
+	encoded to create a block of five printable characters. It treats the number as a 32 bit number and the converts 
+	it to base 85. The integers so obtained are then converted it to its ASCII value we add zeros to the final block
+	to make it a multiple of 4, and convert it to 5 characters as usual. We then add 33 and convert it back to give
+	the character. 
+
+*	Huffman Encoding- This Encoder uses Tress to store data it encodes data in the leaf first and then moves on to the
+	parent nodes and encodes the data further. It checks the frequency of the letters and the letters that are more 
+	frequent than others, fewer bits are used to encode those letters than to encode the less frequent letters. A 
+	frequency table is made to keep track of the frequencies. 
